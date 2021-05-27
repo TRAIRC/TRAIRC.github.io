@@ -133,7 +133,7 @@ gitment:
         client_id: 1c480f4b7b13d2b01d74
         client_secret: 7892f343f6fe8ba2f66d5a3b67f14cf410ec7a52
 # https://github.com/gitalk/gitalk#install
-评论:
+gitalk:
     owner: txwfj
     repo: txwfj.github.io
     clientID: 1c480f4b7b13d2b01d74
