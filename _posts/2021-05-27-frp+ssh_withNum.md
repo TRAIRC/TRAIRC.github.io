@@ -11,9 +11,9 @@
 &emsp;<a href="#9"> 用户体验</a>  
 ---
 layout: post
-title: frp+ssh实现远程连接配置教程
+title: frp+ssh实现远程连接配置教程x
 categories: 教程
-description: 解决 IntelliJ IDEA 启动报 Unsupported Java Version 的问题
+description: Frp+ssh 远程连接
 keywords: FRP, ssh,远程连接
 ---
 
@@ -27,8 +27,8 @@ Ubuntu 默认自带SSH Client，端口号为22。如果没有，可通过sudo ap
 ### 1.2.   安装SSH Server并启动
 + 查看SSH Server是否安装   
  `dpkg -l|grep ssh`   
- 如下图，SSH Client和SSH Sever都安装了   
- ![](/images/posts/frp+ssh/SSH_installed.png) 
+  如下图，SSH Client和SSH Sever都安装了   
+  ![](/images/posts/frp+ssh/SSH_installed.png) 
 + 安装ssh sever    
 `sudo apt-get install ssh `    
 如果失败,那就使用    
@@ -90,7 +90,7 @@ sudo /etc/init.d/ssh start
       查询 frpc 的运行进程ID,并 kill 停止服务.
      kill -9 1108
      ```
-     
+
 如因误操作等原因出现多个进程，可能会导致 frpc 无法使用正确的 frpc.ini 配置，需全部停止，再次启动即可。    
 如果 frpc 的服务器识别明在 frps 服务器上有冗余重复也会导致配置失败，需要进入公网服务器的 dashboard_port 端口进行查看，dashboard_port 端口和 dashboard 界面的管理员账号密码设置如下。    
 另外，记得需要赋予 frp 目录可执行权限，否则会出现 exit 126 报错。
