@@ -8,18 +8,6 @@ keywords: FRP, ssh,远程连接
 
 >声明：本文档并非我本人自愿编写，如有漏洞，最好不要找我（当然如果你搬出了詹詹，那可以找我）。
 
-<a name="index">**Index**</a>
-&emsp;<a href="#0">  配置ssh</a>  
-&emsp;&emsp;<a href="#1">   SSH 分为 Client 和 Server</a>  
-&emsp;&emsp;<a href="#2">  安装SSH Server并启动</a>  
-&emsp;&emsp;<a href="#3"> SSH Server相关配置</a>  
-&emsp;<a href="#4"> 配置frp</a>  
-&emsp;&emsp;<a href="#5"> 在客户端配置frp</a>  
-&emsp;&emsp;<a href="#6"> 在客户端后台开启运行 frp 服务</a>  
-&emsp;&emsp;<a href="#7"> 在服务端配置frp</a>  
-&emsp;&emsp;<a href="#8"> 测试frp+ssh</a>  
-&emsp;<a href="#9"> 用户体验</a>  
-
 
 ## 1.   配置ssh
 ### 1.1.    SSH 分为 Client 和 Server
