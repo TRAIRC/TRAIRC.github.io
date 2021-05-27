@@ -4,7 +4,7 @@ layout: default
 
 {% assign assets_base_url = site.url %}
 {% if site.cdn.jsdelivr.enabled %}
-{% assign assets_base_url = "https://github.com/txwfj/txwfj.github.io" | append: site.repository | append: '@master' %}
+{% assign assets_base_url = "https://github.com/txwfj/txwfj.github.io" %}
 {% endif %}
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
     <div class="container">
