@@ -8,12 +8,23 @@ keywords: FRP, ssh,远程连接
 
 >声明：本文档并非我本人自愿编写，如有漏洞，最好不要找我（当然如果你搬出了詹詹，那可以找我）。
 
+<a name="index">**Index**</a>
+&emsp;<a href="#0">  配置ssh</a>  
+&emsp;&emsp;<a href="#1">   SSH 分为 Client 和 Server</a>  
+&emsp;&emsp;<a href="#2">  安装SSH Server并启动</a>  
+&emsp;&emsp;<a href="#3"> SSH Server相关配置</a>  
+&emsp;<a href="#4"> 配置frp</a>  
+&emsp;&emsp;<a href="#5"> 在客户端配置frp</a>  
+&emsp;&emsp;<a href="#6"> 在客户端后台开启运行 frp 服务</a>  
+&emsp;&emsp;<a href="#7"> 在服务端配置frp</a>  
+&emsp;&emsp;<a href="#8"> 测试frp+ssh</a>  
+&emsp;<a href="#9"> 用户体验</a>  
 
 
-##   配置ssh
-###    SSH 分为 Client 和 Server
+## 1.   配置ssh
+### 1.1.    SSH 分为 Client 和 Server
 Ubuntu 默认自带SSH Client，端口号为22。如果没有，可通过sudo apt-get install openssh-client 来安装。如果作为Server端则需要安装SSH Server。
-###   安装SSH Server并启动
+### 1.2.   安装SSH Server并启动
 + 查看SSH Server是否安装   
  `dpkg -l|grep ssh`   
  如下图，SSH Client和SSH Sever都安装了   
@@ -35,7 +46,7 @@ Ubuntu 默认自带SSH Client，端口号为22。如果没有，可通过sudo ap
 sudo /etc/init.d/ssh start
 sudo service ssh start
 ```
-###  SSH Server相关配置
+### 1.3.  SSH Server相关配置
 SSH Server配置文件在 `/etc/ssh/sshd_config`          
 `sudo vim /etc/ssh/sshd_config`    
 + 这里可以设置SSH Server 端口，默认是22      
@@ -56,9 +67,9 @@ sudo /etc/init.d/ssh start
 `ssh username@ip `   
 ![](/images/posts/frp+ssh/ssh_if_ping.png)     
 
-##  配置frp
+## 2.  配置frp
 
-###  在客户端配置frp
+### 2.1.  在客户端配置frp
   + 点击[打开](https://github.com/fatedier/frp/releases)，可以看到有很多包，下载适合自己系统的包，然后解压。
   +  然后cd 到frp文件夹，查看文件    
     ![](/images/posts/frp+ssh/frp_flo.png)  
@@ -68,7 +79,7 @@ sudo /etc/init.d/ssh start
   +上图是我配置的文件，然后在网上找了个说明，可以看看    
   ![](/images/posts/frp+ssh/frp_e_frpc.png)    
 
-###  在客户端后台开启运行 frp 服务
+### 2.2.  在客户端后台开启运行 frp 服务
 
 `$ nohup ./frpc -c frpc.ini >/dev/null 2>&1 &`   
 说明：`>/dev/null 2>&1 &`，表示丢弃。    
@@ -76,7 +87,7 @@ sudo /etc/init.d/ssh start
 
     ```
     ps -aux|grep frp| grep -v grep  
-      查询 frpc 的运行进程ID,并 kill 停止服务.
+     # 查询 frpc 的运行进程ID,并 kill 停止服务.
      kill -9 1108
      ```
      
@@ -84,7 +95,7 @@ sudo /etc/init.d/ssh start
 如果 frpc 的服务器识别明在 frps 服务器上有冗余重复也会导致配置失败，需要进入公网服务器的 dashboard_port 端口进行查看，dashboard_port 端口和 dashboard 界面的管理员账号密码设置如下。    
 另外，记得需要赋予 frp 目录可执行权限，否则会出现 exit 126 报错。
 
-###  在服务端配置frp
+### 2.3.  在服务端配置frp
    + 首先你 **花money** 在[阿里](https://cn.aliyun.com/)，[腾讯](https://cloud.tencent.com/)，华为等购买云服务器，然后配置好，在云服务器上下载frp文件（可以在自己的电脑上下载，然后通过ssh传上去）
   + 然后cd到frp文件夹，运行`nohup ./frps -c frps.ini >/dev/null 2>&1 & `
   + 这个`frps.ini`文件默认是配置好的，基本上不同改
@@ -99,7 +110,7 @@ sudo /etc/init.d/ssh start
 
 
 
-###  测试frp+ssh
+### 2.4.  测试frp+ssh
 
     'ssh -p [端口] 用户名@公网ip'
 
@@ -109,7 +120,7 @@ sudo /etc/init.d/ssh start
 
 连接上了，完美！！！
 
-##  用户体验
+## 3.  用户体验
 &emsp;&emsp;2021年3月22日，天气晴朗，万里无云。    
 &emsp;&emsp;我和刘他们高高兴兴蹦蹦跳跳地来到公司，当我们跟领导以及同事初步认识后，我回到了我的座位坐下。可是我的屁股还没有坐热，我们部门的leader就发了一封邮件给我，然后绕了一个弯过来教我使用ssh。    
 &emsp;&emsp;当他走过来，打开邮件把ssh xxx@xxxx 复制粘贴到cmd上时，我就知道这个leader非常地不简单，因为他的命令没有一个是对的。搞了一会儿，他没有搞定，走回了座位，然后我自己研究下，才发现他给我的命令都是在中文状态下的。过了不到30秒，他回来了，然后看了一下我的屏幕，说：”啊，你知道怎么回事啦”。然后转身就走了，去教刘他们用了。    
