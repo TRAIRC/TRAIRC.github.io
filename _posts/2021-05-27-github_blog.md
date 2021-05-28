@@ -10,11 +10,11 @@ keywords: github,blog,博客
 —三毛
 
 
-## 注册github账号
+## 1. 注册github账号
 注册github账号就不啰嗦了，自己去搞就好了
 
-## 开始搭建博客
-### 新建一个Repositories
+## 2. 开始搭建博客
+### 2.1. 新建一个Repositories
 Repositories相当于一个仓库，存放我们的代码
 + 第一步，点击github右上角的+，然后点击new repository    
 ![](/images/posts/github_blog/new_repositiory.PNG)
@@ -23,7 +23,7 @@ Repositories相当于一个仓库，存放我们的代码
 
 ![](/images/posts/github_blog/new_repositiory1.PNG)
 
-### 下载GitHub桌面版
+### 2.2. 下载GitHub桌面版
 GitHub桌面版为了避免使用命令行，你也可以不下，使用命令行上传/下载代码
 
 + 下载安装好后，登录自己的账号,然后选择File下的Clone repositories.
@@ -40,7 +40,7 @@ C:\Users\计算机名\Documents\GitHub。
 
 + 然后将该文件夹里的文件都删掉，如果有.git文件，需要保留.git文件
 
-### 下载博客模板
+### 2.3. 下载博客模板
 + 网上好看的模板一大堆，大家收一下就有了，我的模板是从github的[mzlogin](https://github.com/mzlogin/mzlogin.github.io)下载下来的。
 
 + 然后把下载下来的模板文件复制到本地那个库文件夹上
@@ -49,7 +49,7 @@ C:\Users\计算机名\Documents\GitHub。
 
 + 修改好博客文件之后就可以上传到github上了
 
-### 上传文件到giuhub 并配置网页
+### 2.4. 上传文件到giuhub 并配置网页
 
 + 打开GitHub桌面版。你会发现有非常多的changes，如图   
 ![](/images/posts/github_blog/v2-3b08ca2dfb6215d86595c4fdc9fdb7f7_720w.jpg)
