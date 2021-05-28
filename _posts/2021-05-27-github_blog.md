@@ -41,7 +41,7 @@ C:\Users\计算机名\Documents\GitHub。
 + 然后将该文件夹里的文件都删掉，如果有.git文件，需要保留.git文件
 
 ### 2.3. 下载博客模板
-+ 网上好看的模板一大堆，大家收一下就有了，我的模板是从github的[mzlogin](https://github.com/mzlogin/mzlogin.github.io)下载下来的。
++ 网上好看的模板一大堆，大家搜一下就有了，我的模板是从github的[mzlogin](https://github.com/mzlogin/mzlogin.github.io)下载下来的。
 
 + 然后把下载下来的模板文件复制到本地那个库文件夹上
 
@@ -67,7 +67,7 @@ C:\Users\计算机名\Documents\GitHub。
 + 大功告成！打开[https://用户名.github.io/](https://txwfj.github.io/)应该就可以看到自己的博客了，如果不行，就等一下
 
 
-**感谢**
+## 3.**感谢**
 + **本文大部分内容是参考 [我是前端切图仔](https://zhuanlan.zhihu.com/p/28321740)的知乎内容**
 
 + **本博客基于[mzlogin](https://github.com/mzlogin/mzlogin.github.io)改动而成,饮水思源**
