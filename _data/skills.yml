@@ -1,13 +1,16 @@
 - name: Software Engineer Keywords
   keywords:
-      - 机器学习
-      - 集成学习
-      - 强化学习
       - Java
-      - 教程   
+      - C++
+      - Python
+      - Design Patterns  
 
-
-- name: data
+- name: Algorithm Engineer Keywords
   keywords:
-      - data
+      - Deep learning
+      - Broad Learning
+      - Machine Learning
+      - Ensemble Learning
+      - Reinforcement Learning 
+      - Transfer Learning 
      

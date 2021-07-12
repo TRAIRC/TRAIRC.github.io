@@ -1,6 +1,6 @@
 ---
 layout: post
-title: frp+ssh实现远程连接配置教程
+title: 利用github创建自己的博客-简易
 categories: 教程
 description: 利用github创建个人博客
 keywords: github,blog,博客
