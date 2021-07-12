@@ -1,6 +1,6 @@
 ---
 layout: post
-title: frp+ssh实现远程连接配置教程
+title: 利用github创建自己的博客-简易
 categories: 教程
 description: 利用github创建个人博客
 keywords: github,blog,博客
@@ -64,7 +64,7 @@ C:\Users\计算机名\Documents\GitHub。
 
 ![](/images/posts/github_blog/blog_setting2.PNG)
 
-+ 大功告成！打开[https://用户名.github.io/](https://txwfj.github.io/)应该就可以看到自己的博客了，如果不行，就等一下
++ 大功告成！打开[https://用户名.github.io/](https://ng-fukgin.github.io/)应该就可以看到自己的博客了，如果不行，就等一下
 
 
 ## 3.**感谢**
