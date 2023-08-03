@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-# 欢迎来到Triune AI Research Center（TAIRC）
+
 
 一个精专于LLM（Language Model）微调和测试的研究中心，一人的实力与三人的热情完美融合，并有一张詹俦军老师的空白办公桌等待填补。
 
