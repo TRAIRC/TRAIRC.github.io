@@ -191,6 +191,17 @@ collections:
 
 # Defaults
 defaults:
+  # _achievements
+  - scope:
+      path: ""
+      type: achievements
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
   # _posts
   - scope:
       path: ""
