@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Achievement"
-    url: /achievement/
+  - title: "Achievements"
+    url: /achievements/
   # - title: "Publications"
   #   url: /publications/
 
