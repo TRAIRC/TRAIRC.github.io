@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "欢迎来到Triune AI Research Center（TAIRC）"
+title: "欢迎来到Triune AI Research Center（TAIRC,三人行人工智能研究中心）"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
