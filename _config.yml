@@ -194,7 +194,7 @@ defaults:
   # _achievements
   - scope:
       path: ""
-      type: achievements
+      type: achievement
     values:
       layout: single
       author_profile: true
